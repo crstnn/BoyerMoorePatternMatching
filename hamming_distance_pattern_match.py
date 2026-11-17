@@ -1,16 +1,16 @@
 #!/usr/bin/python3.10
 import sys
-from BoyerMoorePatternMatching.gusfields_z_alg import z_alg
+from gusfields_z_alg import z_alg
 
 
 def z_alg_hamming_distance_1(txt: str, pat: str) -> list[int | None]:
     """
-    Finds all the occurrences of 'txt' in 'pat' with a Hamming distance ≤ 1
+    Finds all the occurrences of 'pat' in 'txt' with a Hamming distance ≤ 1
     :param txt: string to match 'pat' to
     :param pat: substring pattern
     :return: an array where the index is the Hamming distance (strictly ≤ 1)
-        0: An exact match of 'txt' in 'pat' (i.e. Hamming distance of 0)
-        1: A match of 'txt' in 'pat' but with one mismatch character (i.e. Hamming distance of 1)
+        0: An exact match of 'pat' in 'txt' (i.e. Hamming distance of 0)
+        1: A match of 'pat' in 'txt' but with one mismatch character (i.e. Hamming distance of 1)
         None: A Hamming distance > 1
     """
     if not pat or not txt: return [None] * max(len(txt), len(pat))  # empty string

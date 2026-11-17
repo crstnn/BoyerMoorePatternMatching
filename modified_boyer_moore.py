@@ -1,6 +1,6 @@
 #!/usr/bin/python3.10
 import sys
-from BoyerMoorePatternMatching.gusfields_z_alg import z_alg
+from gusfields_z_alg import z_alg
 
 
 def modified_boyer_moore_alg(txt: str, pat: str):
