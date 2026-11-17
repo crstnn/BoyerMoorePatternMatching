@@ -1,5 +1,5 @@
 #!/usr/bin/python3.10
-from BoyerMoorePatternMatching.gusfields_z_alg import z_alg
+from gusfields_z_alg import z_alg
 
 
 def exact_match_bm(txt: str, pat: str):
